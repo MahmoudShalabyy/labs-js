@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img id="img" src="/1.jpg" alt="img" width="400px" style="margin: auto">
+   
+    
+<div class="btns">
+    <button id="left">previous</button>
+    <button id="right">next</button>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+
+</div>
+<br>
+<!-- *********************************************************************** -->
+<form id="form">
+    <label>name: <input type="text" id="name" /></label><br/>
+    <label>grade: <input type="text" id="grade" /></label><br/>
+    <button id="add" type="submit">add</button>
+    <span id="error"></span>
+  </form>
+
+  <br/><br/>
+
+  <label>Filter
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="success">Success</option>
+      <option value="fail">Fail</option>
+    </select>
+  </label>
+
+  <label>Sort
+    <select id="sort">
+      <option value="none">None</option>
+      <option value="name">Name</option>
+      <option value="grade">Grade</option>
+    </select>
+  </label>
+
+  <br/><br/>
+
+  <table id="table">
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>grade</th>
+        <th>action</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
