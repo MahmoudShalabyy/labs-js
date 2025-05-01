@@ -20,45 +20,43 @@
 </div>
 <br>
 <!-- *********************************************************************** -->
-<form id="form">
-    <label>name: <input type="text" id="name" /></label><br/>
-    <label>grade: <input type="text" id="grade" /></label><br/>
-    <button id="add" type="submit">add</button>
-    <span id="error"></span>
-  </form>
+<form id="studentForm">
+  <label>StudentName: <input type="text" id="studentName" /></label><br/>
+  <label>StudentGrade: <input type="text" id="studentGrade" /></label><br/>
+  <button id="btn" type="submit">Add</button>
+  <span id="span"></span>
+</form>
 
-  <br/><br/>
+<br/>
 
-  <label>Filter
-    <select id="filter">
-      <option value="all">All</option>
-      <option value="success">Success</option>
-      <option value="fail">Fail</option>
-    </select>
-  </label>
+<label>Filter
+  <select id="filter">
+    <option value="all">All</option>
+    <option value="success">Success</option>
+    <option value="fail">Fail</option>
+  </select>
+</label>
 
-  <label>Sort
-    <select id="sort">
-      <option value="none">None</option>
-      <option value="name">Name</option>
-      <option value="grade">Grade</option>
-    </select>
-  </label>
+<label>Sort
+  <select id="sort">
+    <option value="none">None</option>
+    <option value="name">Name</option>
+    <option value="grade">Grade</option>
+  </select>
+</label>
 
-  <br/><br/>
+<br/><br/>
 
-  <table id="table">
-    <thead>
-      <tr>
-        <th>name</th>
-        <th>grade</th>
-        <th>action</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-
-
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Grade</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
 
     <script src="script.js"></script>
 </body>
